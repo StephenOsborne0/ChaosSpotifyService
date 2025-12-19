@@ -2,6 +2,13 @@
 
 A Windows Service that monitors what you are currently playing on Spotify and writes it to a text file (`song.txt`). This is useful for OBS or other streaming software to display the current track.
 
+## Basic usage
+
+- Download from the releases section
+- Extract the ZIP archive to a folder
+- Either run the ChaosSpotifyService.exe to run, or run register_service.ps1 script to install as a service (automatic, run on startup)
+
+
 ## Features
 
 - Uses Windows Media Control APIs for robust track detection.
