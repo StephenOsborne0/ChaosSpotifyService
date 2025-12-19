@@ -1,12 +1,6 @@
 $ServiceName = "ChaosSpotifyService"
 $ExeName = "ChaosSpotifyService.exe"
-$Tfm = "net10.0-windows10.0.19041.0"
-$ExePath = Join-Path -Path $PSScriptRoot -ChildPath "ChaosSpotifyService\bin\Debug\$Tfm\$ExeName"
-
-if (!(Test-Path $ExePath)) {
-    # Try release path if debug not found
-    $ExePath = Join-Path -Path $PSScriptRoot -ChildPath "ChaosSpotifyService\bin\Release\$Tfm\$ExeName"
-}
+$ExePath = Join-Path -Path $PSScriptRoot -ChildPath $ExeName
 
 if (!(Test-Path $ExePath)) {
     Write-Host "Executable not found. Please build the project first (dotnet build)." -ForegroundColor Red

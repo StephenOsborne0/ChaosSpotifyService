@@ -11,4 +11,15 @@
         <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.0-rc.1.25451.107"/>
         <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="10.0.0-rc.1.25451.107" />
     </ItemGroup>
+
+    <ItemGroup>
+        <None Include="..\register_service.ps1">
+            <Link>register_service.ps1</Link>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Include="..\unregister_service.ps1">
+            <Link>unregister_service.ps1</Link>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
 </Project>
