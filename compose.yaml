@@ -1,0 +1,7 @@
+﻿services:
+  chaosspotifyservice:
+    image: chaosspotifyservice
+    build:
+      context: .
+      dockerfile: ChaosSpotifyService/Dockerfile
+
